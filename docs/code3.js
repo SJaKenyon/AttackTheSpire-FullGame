@@ -248,7 +248,7 @@ gdjs.SettingsCode.condition0IsTrue_0.val = false;
 gdjs.SettingsCode.condition1IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.SettingsCode.GDdifficultyObjects1.length;i<l;++i) {
-    if ( gdjs.SettingsCode.GDdifficultyObjects1[i].getVariableNumber(gdjs.SettingsCode.GDdifficultyObjects1[i].getVariables().getFromIndex(0)) == 0 ) {
+    if ( gdjs.SettingsCode.GDdifficultyObjects1[i].getVariableNumber(gdjs.SettingsCode.GDdifficultyObjects1[i].getVariables().getFromIndex(0)) == 1 ) {
         gdjs.SettingsCode.condition0IsTrue_0.val = true;
         gdjs.SettingsCode.GDdifficultyObjects1[k] = gdjs.SettingsCode.GDdifficultyObjects1[i];
         ++k;
@@ -279,7 +279,7 @@ gdjs.SettingsCode.condition0IsTrue_0.val = false;
 gdjs.SettingsCode.condition1IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.SettingsCode.GDdifficultyObjects1.length;i<l;++i) {
-    if ( gdjs.SettingsCode.GDdifficultyObjects1[i].getVariableNumber(gdjs.SettingsCode.GDdifficultyObjects1[i].getVariables().getFromIndex(0)) == 1 ) {
+    if ( gdjs.SettingsCode.GDdifficultyObjects1[i].getVariableNumber(gdjs.SettingsCode.GDdifficultyObjects1[i].getVariables().getFromIndex(0)) == 2 ) {
         gdjs.SettingsCode.condition0IsTrue_0.val = true;
         gdjs.SettingsCode.GDdifficultyObjects1[k] = gdjs.SettingsCode.GDdifficultyObjects1[i];
         ++k;

@@ -284,11 +284,11 @@ gdjs.copyArray(runtimeScene.getObjects("HitBox"), gdjs.GameCode.GDHitBoxObjects2
 gdjs.copyArray(runtimeScene.getObjects("TutorialTips"), gdjs.GameCode.GDTutorialTipsObjects2);
 {runtimeScene.getVariables().get("topY").setNumber(0);
 }{runtimeScene.getVariables().get("firstPlay").setNumber(1);
-}{runtimeScene.getVariables().get("randomPlatformDistance").setNumber(20 * gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)));
+}{runtimeScene.getVariables().get("randomPlatformDistance").setNumber(20);
 }{runtimeScene.getVariables().get("platformDistance").setNumber(70);
 }{runtimeScene.getVariables().get("devMode").setNumber(0);
 }{runtimeScene.getVariables().get("gameRunning").setNumber(1);
-}{runtimeScene.getVariables().get("skeletonChance").setNumber(25 * gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)));
+}{runtimeScene.getVariables().get("skeletonChance").setNumber(20 * gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)));
 }{runtimeScene.getVariables().get("coinChance").setNumber(10);
 }{runtimeScene.getVariables().get("ghostChance").setNumber(10 * gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)));
 }{runtimeScene.getVariables().get("spikeChance").setNumber(20);
@@ -1837,8 +1837,13 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDGhostObjects2.length;i<l;++i) {
 }
 gdjs.GameCode.GDGhostObjects2.length = k;}if (gdjs.GameCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.GameCode.GDGhostObjects2 */
+gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.GameCode.GDScoreObjects2);
 {for(var i = 0, len = gdjs.GameCode.GDGhostObjects2.length ;i < len;++i) {
     gdjs.GameCode.GDGhostObjects2[i].deleteFromScene(runtimeScene);
+}
+}{runtimeScene.getVariables().get("Score").add(5);
+}{for(var i = 0, len = gdjs.GameCode.GDScoreObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDScoreObjects2[i].setString("Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("Score"))));
 }
 }}
 
@@ -1859,9 +1864,14 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDSkeletonObjects2.length;i<l;++i) {
     }
 }
 gdjs.GameCode.GDSkeletonObjects2.length = k;}if (gdjs.GameCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.GameCode.GDScoreObjects2);
 /* Reuse gdjs.GameCode.GDSkeletonObjects2 */
 {for(var i = 0, len = gdjs.GameCode.GDSkeletonObjects2.length ;i < len;++i) {
     gdjs.GameCode.GDSkeletonObjects2[i].deleteFromScene(runtimeScene);
+}
+}{runtimeScene.getVariables().get("Score").add(2);
+}{for(var i = 0, len = gdjs.GameCode.GDScoreObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDScoreObjects2[i].setString("Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("Score"))));
 }
 }}
 
@@ -1882,7 +1892,7 @@ gdjs.GameCode.condition0IsTrue_0.val = false;
 gdjs.GameCode.condition1IsTrue_0.val = false;
 gdjs.GameCode.condition2IsTrue_0.val = false;
 {
-gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("Score")) > 75;
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().get("Score")) > 50;
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 gdjs.GameCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getVariables().getFromIndex(1)) == 0;
@@ -1926,7 +1936,7 @@ gdjs.GameCode.GDdemonObjects2.length = k;}if (gdjs.GameCode.condition0IsTrue_0.v
 gdjs.copyArray(runtimeScene.getObjects("Hero"), gdjs.GameCode.GDHeroObjects2);
 gdjs.copyArray(runtimeScene.getObjects("fireskull"), gdjs.GameCode.GDfireskullObjects2);
 {for(var i = 0, len = gdjs.GameCode.GDfireskullObjects2.length ;i < len;++i) {
-    gdjs.GameCode.GDfireskullObjects2[i].addForceTowardObject((gdjs.GameCode.GDHeroObjects2.length !== 0 ? gdjs.GameCode.GDHeroObjects2[0] : null), 100 * gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)), 0);
+    gdjs.GameCode.GDfireskullObjects2[i].addForceTowardObject((gdjs.GameCode.GDHeroObjects2.length !== 0 ? gdjs.GameCode.GDHeroObjects2[0] : null), 120 * gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)), 0);
 }
 }
 { //Subevents
@@ -1953,7 +1963,7 @@ gdjs.GameCode.GDdemonObjects2.length = k;}if (gdjs.GameCode.condition0IsTrue_0.v
 gdjs.copyArray(runtimeScene.getObjects("Hero"), gdjs.GameCode.GDHeroObjects2);
 /* Reuse gdjs.GameCode.GDdemonObjects2 */
 {for(var i = 0, len = gdjs.GameCode.GDdemonObjects2.length ;i < len;++i) {
-    gdjs.GameCode.GDdemonObjects2[i].addForceTowardObject((gdjs.GameCode.GDHeroObjects2.length !== 0 ? gdjs.GameCode.GDHeroObjects2[0] : null), 75 * gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)), 0);
+    gdjs.GameCode.GDdemonObjects2[i].addForceTowardObject((gdjs.GameCode.GDHeroObjects2.length !== 0 ? gdjs.GameCode.GDHeroObjects2[0] : null), 100 * gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)), 0);
 }
 }{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets/SoundEffects/monsters/Flapping Wings 3-SoundBible.com-1900341762.mp3", 1, false, 50, 1);
 }}
