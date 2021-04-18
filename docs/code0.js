@@ -81,7 +81,7 @@ gdjs.SplashScreenCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableN
 }if ( gdjs.SplashScreenCode.condition0IsTrue_0.val ) {
 {
 {gdjs.SplashScreenCode.conditionTrue_1 = gdjs.SplashScreenCode.condition1IsTrue_0;
-gdjs.SplashScreenCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10850764);
+gdjs.SplashScreenCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10713300);
 }
 }}
 if (gdjs.SplashScreenCode.condition1IsTrue_0.val) {
@@ -101,7 +101,7 @@ gdjs.SplashScreenCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableN
 }if ( gdjs.SplashScreenCode.condition0IsTrue_0.val ) {
 {
 {gdjs.SplashScreenCode.conditionTrue_1 = gdjs.SplashScreenCode.condition1IsTrue_0;
-gdjs.SplashScreenCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10851380);
+gdjs.SplashScreenCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10714132);
 }
 }}
 if (gdjs.SplashScreenCode.condition1IsTrue_0.val) {
