@@ -1135,7 +1135,7 @@ gdjs.GameCode.condition0IsTrue_0.val = false;
 gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10798812);
 }
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "assets/SoundEffects/monsters/hell-Mike_Koenig-144950046.mp3", true, 30, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets/SoundEffects/monsters/hell-Mike_Koenig-144950046.mp3", 666, false, 30, 1.2);
 }}
 
 }
@@ -3132,6 +3132,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(ru
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 1);
 }{runtimeScene.getVariables().get("pause").setNumber(2);
+}{gdjs.evtTools.sound.stopSoundOnChannel(runtimeScene, 666);
 }
 { //Subevents
 gdjs.GameCode.eventsList24(runtimeScene);} //End of subevents

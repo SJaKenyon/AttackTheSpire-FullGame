@@ -438,7 +438,7 @@ gdjs.SettingsCode.condition0IsTrue_0.val = false;
 gdjs.SettingsCode.condition1IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.SettingsCode.GDglobalsoundObjects1.length;i<l;++i) {
-    if ( gdjs.SettingsCode.GDglobalsoundObjects1[i].getVariableNumber(gdjs.SettingsCode.GDglobalsoundObjects1[i].getVariables().getFromIndex(0)) == 1 ) {
+    if ( gdjs.SettingsCode.GDglobalsoundObjects1[i].getVariableNumber(gdjs.SettingsCode.GDglobalsoundObjects1[i].getVariables().getFromIndex(0)) == 0 ) {
         gdjs.SettingsCode.condition0IsTrue_0.val = true;
         gdjs.SettingsCode.GDglobalsoundObjects1[k] = gdjs.SettingsCode.GDglobalsoundObjects1[i];
         ++k;
@@ -469,7 +469,7 @@ gdjs.SettingsCode.condition0IsTrue_0.val = false;
 gdjs.SettingsCode.condition1IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.SettingsCode.GDglobalsoundObjects1.length;i<l;++i) {
-    if ( gdjs.SettingsCode.GDglobalsoundObjects1[i].getVariableNumber(gdjs.SettingsCode.GDglobalsoundObjects1[i].getVariables().getFromIndex(0)) == 0 ) {
+    if ( gdjs.SettingsCode.GDglobalsoundObjects1[i].getVariableNumber(gdjs.SettingsCode.GDglobalsoundObjects1[i].getVariables().getFromIndex(0)) == 1 ) {
         gdjs.SettingsCode.condition0IsTrue_0.val = true;
         gdjs.SettingsCode.GDglobalsoundObjects1[k] = gdjs.SettingsCode.GDglobalsoundObjects1[i];
         ++k;
