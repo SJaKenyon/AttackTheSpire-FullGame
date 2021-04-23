@@ -2029,7 +2029,7 @@ gdjs.copyArray(runtimeScene.getObjects("demon"), gdjs.GameCode.GDdemonObjects2);
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.GameCode.GDdemonObjects2.length;i<l;++i) {
-    if ( gdjs.GameCode.GDdemonObjects2[i].getX() > (( gdjs.GameCode.GDHeroObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDHeroObjects2[0].getPointX("position")) ) {
+    if ( gdjs.GameCode.GDdemonObjects2[i].getX() <= (( gdjs.GameCode.GDHeroObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDHeroObjects2[0].getPointX("position")) ) {
         gdjs.GameCode.condition0IsTrue_0.val = true;
         gdjs.GameCode.GDdemonObjects2[k] = gdjs.GameCode.GDdemonObjects2[i];
         ++k;
@@ -2038,7 +2038,55 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDdemonObjects2.length;i<l;++i) {
 gdjs.GameCode.GDdemonObjects2.length = k;}if (gdjs.GameCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.GameCode.GDdemonObjects2 */
 {for(var i = 0, len = gdjs.GameCode.GDdemonObjects2.length ;i < len;++i) {
-    gdjs.GameCode.GDdemonObjects2[i].flipX(false);
+    gdjs.GameCode.GDdemonObjects2[i].flipX(true);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Hero"), gdjs.GameCode.GDHeroObjects2);
+gdjs.copyArray(runtimeScene.getObjects("fireskull"), gdjs.GameCode.GDfireskullObjects2);
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.GameCode.GDfireskullObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDfireskullObjects2[i].getX() > (( gdjs.GameCode.GDHeroObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDHeroObjects2[0].getPointX("position")) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDfireskullObjects2[k] = gdjs.GameCode.GDfireskullObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDfireskullObjects2.length = k;}if (gdjs.GameCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.GameCode.GDfireskullObjects2 */
+{for(var i = 0, len = gdjs.GameCode.GDfireskullObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDfireskullObjects2[i].flipX(false);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Hero"), gdjs.GameCode.GDHeroObjects2);
+gdjs.copyArray(runtimeScene.getObjects("fireskull"), gdjs.GameCode.GDfireskullObjects2);
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.GameCode.GDfireskullObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDfireskullObjects2[i].getX() <= (( gdjs.GameCode.GDHeroObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDHeroObjects2[0].getPointX("position")) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDfireskullObjects2[k] = gdjs.GameCode.GDfireskullObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDfireskullObjects2.length = k;}if (gdjs.GameCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.GameCode.GDfireskullObjects2 */
+{for(var i = 0, len = gdjs.GameCode.GDfireskullObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDfireskullObjects2[i].flipX(true);
 }
 }}
 
