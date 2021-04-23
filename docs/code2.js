@@ -53,7 +53,7 @@ gdjs.InstructionsCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableN
 }if ( gdjs.InstructionsCode.condition0IsTrue_0.val ) {
 {
 {gdjs.InstructionsCode.conditionTrue_1 = gdjs.InstructionsCode.condition1IsTrue_0;
-gdjs.InstructionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10951276);
+gdjs.InstructionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10952820);
 }
 }}
 if (gdjs.InstructionsCode.condition1IsTrue_0.val) {
@@ -73,7 +73,7 @@ gdjs.InstructionsCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableN
 }if ( gdjs.InstructionsCode.condition0IsTrue_0.val ) {
 {
 {gdjs.InstructionsCode.conditionTrue_1 = gdjs.InstructionsCode.condition1IsTrue_0;
-gdjs.InstructionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10951892);
+gdjs.InstructionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10953436);
 }
 }}
 if (gdjs.InstructionsCode.condition1IsTrue_0.val) {
