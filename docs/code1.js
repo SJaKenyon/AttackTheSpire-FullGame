@@ -244,7 +244,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(ru
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10738076);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10787772);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -264,7 +264,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(ru
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10738836);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10788532);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -287,7 +287,8 @@ gdjs.copyArray(runtimeScene.getObjects("Hero"), gdjs.GameCode.GDHeroObjects2);
 gdjs.copyArray(runtimeScene.getObjects("HeroFeet"), gdjs.GameCode.GDHeroFeetObjects2);
 gdjs.copyArray(runtimeScene.getObjects("HitBox"), gdjs.GameCode.GDHitBoxObjects2);
 gdjs.copyArray(runtimeScene.getObjects("TutorialTips"), gdjs.GameCode.GDTutorialTipsObjects2);
-{runtimeScene.getVariables().get("topY").setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("diffculty")) + 1);
+}{runtimeScene.getVariables().get("topY").setNumber(0);
 }{runtimeScene.getVariables().get("firstPlay").setNumber(1);
 }{runtimeScene.getVariables().get("randomPlatformDistance").setNumber(20);
 }{runtimeScene.getVariables().get("platformDistance").setNumber(70);
@@ -306,7 +307,6 @@ gdjs.copyArray(runtimeScene.getObjects("TutorialTips"), gdjs.GameCode.GDTutorial
 }{for(var i = 0, len = gdjs.GameCode.GDHeroObjects2.length ;i < len;++i) {
     gdjs.GameCode.GDHeroObjects2[i].returnVariable(gdjs.GameCode.GDHeroObjects2[i].getVariables().get("attack")).setNumber(0);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().get("diffculty")) + 1);
 }{gdjs.evtTools.camera.hideLayer(runtimeScene, "GameOver");
 }{for(var i = 0, len = gdjs.GameCode.GDTutorialTipsObjects2.length ;i < len;++i) {
     gdjs.GameCode.GDTutorialTipsObjects2[i].hide();
@@ -384,7 +384,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTes
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10748044);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10797740);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -887,7 +887,7 @@ gdjs.GameCode.conditionTrue_1.val = true && gdjs.GameCode.condition0IsTrue_1.val
 }if ( gdjs.GameCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition2IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10770788);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10820484);
 }
 }}
 }
@@ -992,7 +992,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDHeroObjects3.length;i<l;++i) {
 gdjs.GameCode.GDHeroObjects3.length = k;}if ( gdjs.GameCode.condition3IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition4IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10775524);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10825220);
 }
 }}
 }
@@ -1090,7 +1090,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDHeroObjects2.length;i<l;++i) {
 gdjs.GameCode.GDHeroObjects2.length = k;}if ( gdjs.GameCode.condition3IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition4IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10778108);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10827804);
 }
 }}
 }
@@ -1115,7 +1115,7 @@ if (gdjs.GameCode.condition4IsTrue_0.val) {
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition0IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10797372);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10847068);
 }
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "assets/SoundEffects/monsters/Flapping Wings 3-SoundBible.com-1900341762.mp3", true, 100, 1);
@@ -1132,7 +1132,7 @@ gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(1
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition0IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10798812);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10848508);
 }
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets/SoundEffects/monsters/hell-Mike_Koenig-144950046.mp3", 666, false, 30, 1.2);
@@ -1149,7 +1149,7 @@ gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(1
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition0IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10803156);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10854196);
 }
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.GameCode.GDdemonObjects2, gdjs.GameCode.GDdemonObjects3);
@@ -1180,7 +1180,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDdemonObjects3.length;i<l;++i) {
 gdjs.GameCode.GDdemonObjects3.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10803700);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10854740);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -1218,7 +1218,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDdemonObjects2.length;i<l;++i) {
 gdjs.GameCode.GDdemonObjects2.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10805460);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10856540);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -1242,7 +1242,7 @@ if (gdjs.GameCode.condition1IsTrue_0.val) {
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition0IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10813460);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10864548);
 }
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets/SoundEffects/hero/death.wav", 1, false, 60, 1);
@@ -1331,7 +1331,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDHeroObjects2.length;i<l;++i) {
 gdjs.GameCode.GDHeroObjects2.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10764044);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10813740);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -1457,7 +1457,7 @@ gdjs.GameCode.condition2IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeS
 }if ( gdjs.GameCode.condition2IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition3IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10767676);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10817372);
 }
 }}
 }
@@ -1618,7 +1618,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTes
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10781196);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10830892);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -1658,7 +1658,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDHeroObjects2.length;i<l;++i) {
 gdjs.GameCode.GDHeroObjects2.length = k;}if ( gdjs.GameCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition2IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10783204);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10832900);
 }
 }}
 }
@@ -1698,7 +1698,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDHeroObjects2.length;i<l;++i) {
 gdjs.GameCode.GDHeroObjects2.length = k;}if ( gdjs.GameCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition2IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10784852);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10834548);
 }
 }}
 }
@@ -1744,7 +1744,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDHeroObjects2.length;i<l;++i) {
 gdjs.GameCode.GDHeroObjects2.length = k;}if ( gdjs.GameCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition2IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10787348);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10837044);
 }
 }}
 }
@@ -1786,7 +1786,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDGhostObjects2.length;i<l;++i) {
 gdjs.GameCode.GDGhostObjects2.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10788972);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10838668);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -1823,7 +1823,7 @@ for(var i = 0, k = 0, l = gdjs.GameCode.GDSkeletonObjects2.length;i<l;++i) {
 gdjs.GameCode.GDSkeletonObjects2.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10790556);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10840252);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -1923,7 +1923,7 @@ gdjs.GameCode.condition1IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(ru
 }if ( gdjs.GameCode.condition1IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition2IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10795116);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10844812);
 }
 }}
 }
@@ -2132,7 +2132,7 @@ gdjs.GameCode.conditionTrue_1.val = true && gdjs.GameCode.condition0IsTrue_1.val
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10801076);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10852116);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -2183,7 +2183,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTes
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10806620);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10857700);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -2718,7 +2718,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeS
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10833204);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10884380);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -3008,7 +3008,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(
 gdjs.GameCode.condition0IsTrue_0.val = false;
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition0IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10845572);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10896964);
 }
 }if (gdjs.GameCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("FinalScore"), gdjs.GameCode.GDFinalScoreObjects2);
@@ -3153,7 +3153,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeS
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10858276);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10909628);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -3176,7 +3176,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeS
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10859124);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10910476);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -3201,7 +3201,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeS
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10861356);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10912708);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -3223,7 +3223,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeS
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10862860);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10914212);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -3246,7 +3246,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeS
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10864532);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10915884);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
@@ -3276,7 +3276,7 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeS
 }if ( gdjs.GameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
-gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10854516);
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10905868);
 }
 }}
 if (gdjs.GameCode.condition1IsTrue_0.val) {
